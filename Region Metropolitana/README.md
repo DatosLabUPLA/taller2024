@@ -11,5 +11,5 @@
 - Autores: Autores que realizaron la noticia.
 - Resumen: Resumen general de la noticia.
 - Fecha: Fecha y hora en la que fue creada la noticia.
-- Etiquetas: Etiquetas que indican el tipo noticia que es y/o el lugar donde ocurrio (Asalto, Incendio, Región Metropolitana, etc.).
+- Etiquetas: Etiquetas que indican el tipo de noticia que es y/o el lugar donde ocurrio (Asalto, Incendio, Región Metropolitana, etc.).
 - URL: URL de la noticia en cuestión.
