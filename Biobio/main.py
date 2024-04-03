@@ -19,16 +19,22 @@ def initialize_database():
     c = conn.cursor()
     # Crear tabla para almacenar los datos
     c.execute('''CREATE TABLE IF NOT EXISTS scraped_data
-                 (id INTEGER PRIMARY KEY AUTOINCREMENT, link TEXT, document_type TEXT)''')
+                 (id INTEGER PRIMARY KEY AUTOINCREMENT, link TEXT, document_type TEXT, comuna TEXT)''')
     conn.commit()
     conn.close()
 
 # Función para insertar datos en la base de datos
-def insert_data(link, document_type):
+def insert_data(link, document_type, comuna):
     conn = sqlite3.connect('scraped_data.db')
     c = conn.cursor()
-    c.execute("INSERT INTO scraped_data (link, document_type) VALUES (?, ?)", (link, document_type))
-    conn.commit()
+    # Verificar si el enlace ya existe en la base de datos
+    c.execute("SELECT * FROM scraped_data WHERE link=?", (link,))
+    if not c.fetchone():  # Si no hay coincidencias, insertar el enlace
+        c.execute("INSERT INTO scraped_data (link, document_type, comuna) VALUES (?, ?, ?)", (link, document_type, comuna))
+        conn.commit()
+        print(f'Enlace insertado para la comuna "{comuna}": {link}')
+    else:
+        print(f'Enlace duplicado para la comuna "{comuna}": {link}')
     conn.close()
 
 # Función para registrar acciones en el archivo de log
@@ -47,6 +53,16 @@ def scrape_and_save(url):
     # Fecha y hora de inicio del scraping
     start_time = datetime.now()
     log_action(f'Iniciando scraping a las {start_time}')
+
+    # Lista de comunas de la Región del Biobío
+    comunas_biobio = [
+        'alto-biobio', 'antuco', 'arauco', 'cabrero', 'cañete', 'chiguayante', 
+        'concepcion', 'contulmo', 'coronel', 'coranilahue', 'florida', 'hualpen', 
+        'hualqui', 'laja', 'lebu', 'los-alamos', 'los-angeles', 'lota', 'mulchen', 
+        'nacimiento', 'negrete', 'penco', 'quilaco', 'quilleco', 'san-pedro-de-la-paz', 
+        'san-rosendo', 'santa-barbara', 'santa-juana', 'talcahuano', 'tirua', 'tome', 
+        'tucapel'
+    ]
 
     while link_queue:
         # Obtener el próximo enlace de la cola
@@ -72,18 +88,19 @@ def scrape_and_save(url):
             log_action('Extrayendo enlaces de la página...')
             page_links = [urljoin(current_url, link['href']) for link in soup.find_all('a', href=True)]
             for page_link in page_links:
-                if page_link not in visited_links and page_link not in link_queue and 'javascript:void(0)' not in page_link:
-                    link_queue.append(page_link)
-                    insert_data(page_link, 'Link')
-                    log_action(f'Enlace encontrado: {page_link}')
+                # Verificar si el enlace contiene alguna comuna del Biobío
+                for comuna in comunas_biobio:
+                    if comuna in page_link.lower():
+                        # Almacenar el enlace etiquetado por el tipo de documento y la comuna
+                        insert_data(page_link, 'Link', comuna)
 
-            # Extraer los enlaces de los documentos (pdf, img, etc.)
-            log_action('Extrayendo enlaces de documentos...')
-            document_links = [urljoin(current_url, link['href']) for link in soup.find_all('a', href=True) if link['href'].endswith(('.pdf', '.jpg', '.png', '.doc', '.docx'))]
-            for document_link in document_links:
-                if document_link not in visited_links:
-                    insert_data(document_link, 'Documento')
-                    log_action(f'Documento encontrado: {document_link}')
+            # Buscar el botón de cambio de página y agregar su enlace a la cola
+            next_page_button = soup.find('a', class_='next')
+            if next_page_button:
+                next_page_link = urljoin(current_url, next_page_button['href'])
+                if next_page_link not in visited_links and next_page_link not in link_queue:
+                    link_queue.append(next_page_link)
+                    log_action(f'Agregado enlace de próxima página: {next_page_link}')
 
         else:
             log_action(f'Error al realizar la solicitud HTTP para {current_url}')
@@ -101,7 +118,7 @@ if __name__ == '__main__':
     initialize_database()
 
     # URL de la página web semilla
-    seed_url = 'https://munialtobiobio.cl/#'
+    seed_url = 'https://infomunicipalidades.com/biobio/'
 
     # Llamar a la función de scraping y guardar
     scrape_and_save(seed_url)
