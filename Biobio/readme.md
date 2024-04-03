@@ -1,10 +1,10 @@
 # Municipalidad de Biobío
 
-Este proyecto consiste en un scraper para recopilar información del sitio web de la Municipalidad de Biobío.
+Este proyecto consiste en un scraper para recopilar información del sitio web de la Municipalidades del Biobío.
 
 ## Información General del Sitio
 
-El sitio web de la Municipalidad de Biobío proporciona información sobre servicios municipales, noticias locales, eventos, y más.
+Sitio web de las Municipalidades del Biobío, proporcionan información sobre servicios municipales, noticias locales, eventos, y más.
 
 ## Estudiante Asignado
 
