@@ -1,0 +1,11 @@
+2024-04-03 14:59:12.739010: Iniciando scraping a las 2024-04-03 14:59:12.739010
+2024-04-03 14:59:12.739010: Obteniendo página: https://infomunicipalidades.com/biobio/
+2024-04-03 14:59:14.381804: Extrayendo enlaces de la página...
+2024-04-03 14:59:14.472366: Agregado enlace de próxima página: https://infomunicipalidades.com/biobio/page/2/
+2024-04-03 14:59:14.472366: Obteniendo página: https://infomunicipalidades.com/biobio/page/2/
+2024-04-03 14:59:15.937290: Extrayendo enlaces de la página...
+2024-04-03 14:59:16.010927: Agregado enlace de próxima página: https://infomunicipalidades.com/biobio/page/3/
+2024-04-03 14:59:16.010927: Obteniendo página: https://infomunicipalidades.com/biobio/page/3/
+2024-04-03 14:59:17.435688: Extrayendo enlaces de la página...
+2024-04-03 14:59:17.493470: Scrape completado a las 2024-04-03 14:59:17.493419
+2024-04-03 14:59:17.493470: Tiempo total de ejecución: 0:00:04.754409

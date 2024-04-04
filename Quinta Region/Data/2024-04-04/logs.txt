@@ -1,0 +1,112 @@
+Hora y fecha de inicio: 2024-04-04_00:02
+Obteniendo HTML. 
+Parseo de HTML.
+Obteniendo Links de interés. 
+Creando listas de utilidad.
+Extrayendo datos de interes del juego: Counter-Strike 2
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Call of Duty®
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Call of Duty®: Modern Warfare® III - BlackCell (Season 3)
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: HELLDIVERS™ 2
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Información no encontrada
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Content Warning
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Apex Legends™
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Call of Duty®: Warzone™
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: The Elder Scrolls® Online
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: PUBG: BATTLEGROUNDS
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Cyberpunk 2077
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Dragon's Dogma 2
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Warframe
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Baldur's Gate 3
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Tom Clancy's Rainbow Six® Siege
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: ARK: Survival Ascended
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Dead by Daylight
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Lost Ark
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Pixel Gun 3D: PC Edition
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Call of Duty®: Modern Warfare® III
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: ELDEN RING
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: FINAL FANTASY XIV Online
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Grand Theft Auto V
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Darkest Dungeon®
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Supermarket Simulator
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: War Thunder
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: ARK: Bob's Tall Tales
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Black Desert
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Assetto Corsa Competizione
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Path of Exile
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Destiny 2
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Cyberpunk 2077: Phantom Liberty
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Stardew Valley
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Yu-Gi-Oh! Master Duel
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Kenshi
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Horizon Forbidden West™ Complete Edition
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Palworld
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: NARAKA: BLADEPOINT
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Planet Zoo
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: TEKKEN 8
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Rust
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Lethal Company
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Lies of P
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Dota 2
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: The Witcher® 3: Wild Hunt
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Enshrouded
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Balatro
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Bloons TD 6
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: FINAL FANTASY XIV: Dawntrail
+Iniciando siguiente juego.
+Extrayendo datos de interes del juego: Conan Exiles
+Iniciando siguiente juego.
+Uniendo listas.
+Creando DataFrame.
+Creando Base de datos.
+Creando CSV.
+Moviendo archivo de Directorio.
+Traspaso completado.
+ Hora de termino: 2024-04-04_00:03
